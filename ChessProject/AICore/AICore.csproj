@@ -43,6 +43,7 @@
     <Compile Include="Core\SearchingAlgorithms\Backtrack\BacktrackDieHard3.cs" />
     <Compile Include="Core\SearchingAlgorithms\DepthFirst\DepthFirstDieHard3.cs" />
     <Compile Include="Core\SearchingAlgorithms\GraphSearchDieHard3.cs" />
+    <Compile Include="State representations\ChessProblemState.cs" />
     <Compile Include="State representations\Enum\Direction.cs" />
     <Compile Include="State representations\Enum\CanActions.cs" />
     <Compile Include="Core\State\AbstractState.cs" />
