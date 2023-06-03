@@ -18,6 +18,12 @@ namespace AICore
             this.depth = 0;
             this.parent = null;
         }
+        public ChessProblemNode(ChessProblemState state)
+        {
+            this.state = state;
+            this.depth = 0;
+            this.parent = null;
+        }
         public ChessProblemNode(ChessProblemNode parent)
         {
             this.state = (ChessProblemState)parent.state.Clone();
@@ -34,12 +40,12 @@ namespace AICore
         {
             List<ChessProblemNode> children = new List<ChessProblemNode>();
 
-            int yLength = this.state.GetXLength;
-            int xLength = this.state.GetYLength;
+            int xLength = this.state.GetXLength;
+            int yLength = this.state.GetYLength;
 
-            for (int i = 0; i < xLength; i++)
+            for (int i = 1; i < xLength - 1; i++)
             {
-                for (int u = 0; u < yLength; u++)
+                for (int u = 1; u < yLength - 1; u++)
                 {
                     for (int dir = 0; dir < 8; dir++)
                     {

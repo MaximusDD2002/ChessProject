@@ -41,11 +41,23 @@ namespace ChessConsole
             //Console.WriteLine(state.ApplyOperator(1, 2, Direction8.DownRight));
             //Console.Write(state.ToString());
 
-            BacktrackChessProblem backChessProblem = new BacktrackChessProblem(100, true);
+            //BacktrackChessProblem backChessProblem = new BacktrackChessProblem(100, true);
 
-            ChessProblemNode backSolution = backChessProblem.Search();
+            //ChessProblemNode backSolution = backChessProblem.Search();
 
-            backChessProblem.PrintSolution(backSolution);
+            //backChessProblem.PrintSolution(backSolution);
+
+            char[,] almostGoal = new char[,]
+            {
+                { '#', '#', '#', '#', '#' },
+                { '#', 'B', 'B', 'K', '#' },
+                { '#', 'R', 'R', '0', '#' },
+                { '#', '#', '#', '#', '#' }
+            };
+
+            DepthFirstChessProblem depthProblem = new DepthFirstChessProblem();
+            ChessProblemNode depthSolution = depthProblem.Search();
+            depthProblem.PrintSolution(depthSolution);
         }
     }
 }
