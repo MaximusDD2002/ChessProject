@@ -115,9 +115,66 @@ namespace AICore
             return true;
         }
 
-        public bool ApplyOperator(bool t, CanActions u)
+        public bool ApplyOperator(int x, int y, Direction8 dir)
         {
-            throw new NotImplementedException();
+            if (!IsOperator(x, y, dir)) return false;
+            ChessProblemState clone = (ChessProblemState)this.Clone();
+            char tempswap;
+            switch (dir)
+            {
+                case Direction8.Up:
+                    tempswap = chessboard[x - 1, y];
+                    chessboard[x - 1, y] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+                case Direction8.Down:
+                    tempswap = chessboard[x + 1, y];
+                    chessboard[x + 1, y] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+                case Direction8.Left:
+                    tempswap = chessboard[x, y - 1];
+                    chessboard[x, y - 1] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+                case Direction8.Right:
+                    tempswap = chessboard[x, y + 1];
+                    chessboard[x, y + 1] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+                case Direction8.UpLeft:
+                    tempswap = chessboard[x - 1, y - 1];
+                    chessboard[x - 1, y - 1] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+                case Direction8.UpRight:
+                    tempswap = chessboard[x - 1, y + 1];
+                    chessboard[x - 1, y + 1] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+                case Direction8.DownLeft:
+                    tempswap = chessboard[x + 1, y - 1];
+                    chessboard[x + 1, y - 1] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+                case Direction8.DownRight:
+                    tempswap = chessboard[x + 1, y + 1];
+                    chessboard[x + 1, y + 1] = chessboard[x, y];
+                    chessboard[x, y] = tempswap;
+                    break;
+
+            }
+            if (IsState())
+                return true;
+
+            this.chessboard = clone.GetState;
+
+            return false;
+        }
+
+        public override object Clone()
+        {
+            return new ChessProblemState(this.GetState);
         }
 
         public override string ToString()

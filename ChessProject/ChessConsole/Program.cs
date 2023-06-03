@@ -37,11 +37,13 @@ namespace ChessConsole
             Console.WriteLine("Is{0} a valid state", goalState.IsState() ? "" : " not");
             Console.WriteLine("Is{0} a goal state", goalState.IsGoalState() ? "" : " not");
 
-            int x = 2;
-            int y = 2;
-            Console.WriteLine(state.GetState[x, y]);
-            Console.WriteLine(state.IsOperator(x, y, Direction8.Up));
             
+            Console.WriteLine(state.ApplyOperator(1, 2, Direction8.DownRight));
+            Console.Write(state.ToString());
+
+
+
+
         }
     }
 }
