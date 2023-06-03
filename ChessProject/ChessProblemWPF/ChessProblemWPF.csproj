@@ -7,7 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Pieces\Bishop.png" />
+    <None Remove="Pieces\King.png" />
+    <None Remove="Pieces\Rook.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AICore\AICore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pieces\Bishop.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pieces\King.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pieces\Rook.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

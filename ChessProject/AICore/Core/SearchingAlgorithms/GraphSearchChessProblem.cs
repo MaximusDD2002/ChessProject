@@ -59,5 +59,24 @@ namespace AICore
 
             return solution;
         }
+
+        public List<ChessProblemNode> GetSolutionAsList(ChessProblemNode terminalNode)
+        {
+            if (terminalNode == null)
+            {
+                Console.WriteLine("There is no solution for this problem.");
+                return null;
+            }
+
+            List<ChessProblemNode> solution = new List<ChessProblemNode>();
+            ChessProblemNode node = terminalNode;
+            while (node != null)
+            {
+                solution.Insert(0,node);
+                node = node.Parent;
+            }
+
+            return solution;
+        }
     }
 }
