@@ -176,6 +176,19 @@ namespace AICore
             return false;
         }
 
+        public override bool Equals(object obj)
+        {
+            char[,] vs = (obj as ChessProblemState).GetState;
+            for (int i = 0; i < this.chessboard.GetLength(0); i++)
+            {
+                for (int u = 0; u < this.chessboard.GetLength(1); u++)
+                {
+                    if (this.chessboard[i, u] != vs[i, u]) return false;
+                }
+            }
+            return true;
+        }
+
         public override object Clone()
         {
             return new ChessProblemState(this.GetState);

@@ -54,5 +54,16 @@ namespace AICore
             return children;
         }
 
+        public override bool Equals(object obj)
+        {
+            ChessProblemNode other = (ChessProblemNode)obj;
+            return this.state.Equals(other.state);
+        }
+
+        public override string ToString()
+        {
+            return state.ToString();
+        }
+
     }
 }
