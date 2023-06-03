@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "AICore/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/AICore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AICore.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AICore/1.0.0": {
+      "type": "project",
+      "path": "../AICore/AICore.csproj",
+      "msbuildProject": "../AICore/AICore.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "AICore >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\WWW\\.nuget\\packages\\": {}
@@ -33,7 +51,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\AICore\\AICore.csproj": {
+              "projectPath": "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\AICore\\AICore.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AICore.State_representations
+namespace AICore
 {
-    class ChessProblemState : AbstractState, IOperatorHandler<bool, CanActions>
+    public class ChessProblemState : AbstractState, IOperatorHandler<bool, CanActions>
     {
         char[,] chessboard;
 
@@ -36,15 +36,33 @@ namespace AICore.State_representations
                 { '#', '#', '#', '#', '#' }
             };
         }
+
+        public ChessProblemState(char[,] board)
+        {
+            this.chessboard = board;
+        }
+
+        public char[,] GetState
+        {
+            get { return (char[,])this.chessboard.Clone(); }
+        }
+
         public override bool IsGoalState()
         {
-            return (this.chessboard == GOAL);
+            for (int i = 0; i < this.chessboard.GetLength(0); i++)
+            {
+                for (int u = 0; u < this.chessboard.GetLength(1); u++)
+                {
+                    if (this.chessboard[i, u] != GOAL[i, u]) return false;
+                }
+            }
+            return true;
         }
 
         public override bool IsState()
         {
-            int xLength = this.chessboard.GetLength(0);
-            int yLength = this.chessboard.GetLength(1);
+            int yLength = this.chessboard.GetLength(0);
+            int xLength = this.chessboard.GetLength(1);
             for (int i = 0; i < xLength; i++)
             {
                 if (chessboard[0,i] != '#' || chessboard[yLength - 1, i] != '#') { return false; }
@@ -66,6 +84,20 @@ namespace AICore.State_representations
         public bool ApplyOperator(bool t, CanActions u)
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < this.chessboard.GetLength(0); i++)
+            {
+                for (int u = 0; u < this.chessboard.GetLength(1); u++)
+                {
+                    sb.Append(this.chessboard[i, u]);
+                }
+                sb.Append("\n");
+            }
+            return sb.ToString();
         }
     }
 }

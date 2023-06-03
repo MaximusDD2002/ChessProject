@@ -8,3 +8,9 @@ C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\bin\Debug\AICore.p
 C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\obj\Debug\AICore.csproj.CoreCompileInputs.cache
 C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\obj\Debug\AICore.dll
 C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\obj\Debug\AICore.pdb
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\AICore\bin\Debug\AICore.dll
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\AICore\bin\Debug\AICore.pdb
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\AICore\obj\Debug\AICore.csproj.AssemblyReference.cache
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\AICore\obj\Debug\AICore.csproj.CoreCompileInputs.cache
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\AICore\obj\Debug\AICore.dll
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\AICore\obj\Debug\AICore.pdb
