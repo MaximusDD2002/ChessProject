@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AICore
 {
-    public class ChessProblemState : AbstractState, IOperatorHandler<bool, CanActions>
+    public class ChessProblemState : AbstractState
     {
         char[,] chessboard;
 
@@ -76,9 +76,43 @@ namespace AICore
             return true;
         }
 
-        public bool IsOperator(bool t, CanActions u)
+        public bool IsOperator(int x, int y, Direction8 dir)
         {
-            throw new NotImplementedException();
+            char piece = this.chessboard[x, y];
+            if (x < 1 && x > this.chessboard.GetLength(0) - 2) return false;
+            if (y < 1 && y > this.chessboard.GetLength(1) - 2) return false;
+            if (piece == 'R' && (int)dir > 3) return false;
+            if (piece == 'B' && (int)dir < 4) return false;
+            if (piece == '0') return false;
+            switch (dir)
+            {
+                case Direction8.Up:
+                    if (chessboard[x - 1, y] != '0') return false;
+                    break;
+                case Direction8.Down:
+                    if (chessboard[x + 1, y] != '0') return false;
+                    break;
+                case Direction8.Left:
+                    if (chessboard[x, y - 1] != '0') return false;
+                    break;
+                case Direction8.Right:
+                    if (chessboard[x, y + 1] != '0') return false;
+                    break;
+                case Direction8.UpLeft:
+                    if (chessboard[x - 1, y - 1] != '0') return false;
+                    break;
+                case Direction8.UpRight:
+                    if (chessboard[x - 1, y + 1] != '0') return false;
+                    break;
+                case Direction8.DownLeft:
+                    if (chessboard[x + 1, y - 1] != '0') return false;
+                    break;
+                case Direction8.DownRight:
+                    if (chessboard[x + 1, y + 1] != '0') return false;
+                    break;
+
+            }
+            return true;
         }
 
         public bool ApplyOperator(bool t, CanActions u)
