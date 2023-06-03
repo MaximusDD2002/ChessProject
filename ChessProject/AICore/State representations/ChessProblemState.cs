@@ -42,6 +42,16 @@ namespace AICore
             this.chessboard = board;
         }
 
+        public int GetXLength
+        {
+            get { return this.chessboard.GetLength(0); }
+        }
+
+        public int GetYLength
+        {
+            get { return this.chessboard.GetLength(1); }
+        }
+
         public char[,] GetState
         {
             get { return (char[,])this.chessboard.Clone(); }
@@ -49,9 +59,9 @@ namespace AICore
 
         public override bool IsGoalState()
         {
-            for (int i = 0; i < this.chessboard.GetLength(0); i++)
+            for (int i = 0; i < this.GetXLength; i++)
             {
-                for (int u = 0; u < this.chessboard.GetLength(1); u++)
+                for (int u = 0; u < this.GetYLength; u++)
                 {
                     if (this.chessboard[i, u] != GOAL[i, u]) return false;
                 }
@@ -61,16 +71,14 @@ namespace AICore
 
         public override bool IsState()
         {
-            int yLength = this.chessboard.GetLength(0);
-            int xLength = this.chessboard.GetLength(1);
-            for (int i = 0; i < xLength; i++)
+            for (int i = 0; i < this.GetYLength; i++)
             {
-                if (chessboard[0,i] != '#' || chessboard[yLength - 1, i] != '#') { return false; }
+                if (chessboard[0,i] != '#' || chessboard[this.GetXLength - 1, i] != '#') { return false; }
             }
 
-            for (int i = 1; i < yLength - 1; i++)
+            for (int i = 1; i < this.GetXLength - 1; i++)
             {
-                if (chessboard[i, 0] != '#' || chessboard[i, xLength - 1] != '#') { return false; }
+                if (chessboard[i, 0] != '#' || chessboard[i, this.GetYLength - 1] != '#') { return false; }
             }
 
             return true;
@@ -79,8 +87,8 @@ namespace AICore
         public bool IsOperator(int x, int y, Direction8 dir)
         {
             if (!IsState()) return false;
-            if (x < 0 && x > this.chessboard.GetLength(0) - 1) return false;
-            if (y < 0 && y > this.chessboard.GetLength(1) - 1) return false;
+            if (x < 0 && x > this.GetXLength - 1) return false;
+            if (y < 0 && y > this.GetYLength - 1) return false;
 
 
             char piece = this.chessboard[x, y];
@@ -179,9 +187,9 @@ namespace AICore
         public override bool Equals(object obj)
         {
             char[,] vs = (obj as ChessProblemState).GetState;
-            for (int i = 0; i < this.chessboard.GetLength(0); i++)
+            for (int i = 0; i < this.GetXLength; i++)
             {
-                for (int u = 0; u < this.chessboard.GetLength(1); u++)
+                for (int u = 0; u < this.GetYLength; u++)
                 {
                     if (this.chessboard[i, u] != vs[i, u]) return false;
                 }
@@ -197,9 +205,9 @@ namespace AICore
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < this.chessboard.GetLength(0); i++)
+            for (int i = 0; i < this.GetXLength; i++)
             {
-                for (int u = 0; u < this.chessboard.GetLength(1); u++)
+                for (int u = 0; u < this.GetYLength; u++)
                 {
                     sb.Append(this.chessboard[i, u]);
                 }

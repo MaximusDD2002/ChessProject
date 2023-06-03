@@ -34,8 +34,8 @@ namespace AICore
         {
             List<ChessProblemNode> children = new List<ChessProblemNode>();
 
-            int yLength = this.state.GetState.GetLength(0);
-            int xLength = this.state.GetState.GetLength(1);
+            int yLength = this.state.GetXLength;
+            int xLength = this.state.GetYLength;
 
             for (int i = 0; i < xLength; i++)
             {
