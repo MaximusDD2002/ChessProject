@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Node\ChessProblemNode.cs" />
     <Compile Include="Core\Node\DieHard3Node.cs" />
     <Compile Include="Core\SearchingAlgorithms\Backtrack\BacktrackDieHard3.cs" />
     <Compile Include="Core\SearchingAlgorithms\DepthFirst\DepthFirstDieHard3.cs" />
