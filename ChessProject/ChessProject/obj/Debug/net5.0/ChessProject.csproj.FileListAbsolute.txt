@@ -1,0 +1,12 @@
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\bin\Debug\net5.0\ChessProject.deps.json
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\bin\Debug\net5.0\ChessProject.dll
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\bin\Debug\net5.0\ChessProject.pdb
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ChessProject.csproj.AssemblyReference.cache
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ChessProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ChessProject.AssemblyInfoInputs.cache
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ChessProject.AssemblyInfo.cs
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ChessProject.csproj.CoreCompileInputs.cache
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ChessProject.dll
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\refint\ChessProject.dll
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ChessProject.pdb
+C:\Users\olegd\Documents\GitHub\ChessProject\ChessProject\ChessProject\obj\Debug\net5.0\ref\ChessProject.dll

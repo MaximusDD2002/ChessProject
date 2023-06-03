@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\WWW\\.nuget\\packages\\": {}
+    "C:\\Users\\olegd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProject\\ChessProject.csproj",
+      "projectUniqueName": "C:\\Users\\olegd\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProject\\ChessProject.csproj",
       "projectName": "ChessProject",
-      "projectPath": "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProject\\ChessProject.csproj",
-      "packagesPath": "C:\\Users\\WWW\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProject\\obj\\",
+      "projectPath": "C:\\Users\\olegd\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProject\\ChessProject.csproj",
+      "packagesPath": "C:\\Users\\olegd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olegd\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\WWW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\olegd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
