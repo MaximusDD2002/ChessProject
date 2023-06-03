@@ -78,9 +78,13 @@ namespace AICore
 
         public bool IsOperator(int x, int y, Direction8 dir)
         {
+            if (!IsState()) return false;
+            if (x < 0 && x > this.chessboard.GetLength(0) - 1) return false;
+            if (y < 0 && y > this.chessboard.GetLength(1) - 1) return false;
+
+
             char piece = this.chessboard[x, y];
-            if (x < 1 && x > this.chessboard.GetLength(0) - 2) return false;
-            if (y < 1 && y > this.chessboard.GetLength(1) - 2) return false;
+            if (piece == '#') return false;
             if (piece == 'R' && (int)dir > 3) return false;
             if (piece == 'B' && (int)dir < 4) return false;
             if (piece == '0') return false;
