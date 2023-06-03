@@ -20,3 +20,6 @@ C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\ChessProblemWPF\obj\Debu
 C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\ChessProblemWPF\obj\Debug\net5.0-windows\ref\ChessProblemWPF.dll
 C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\ChessProblemWPF\obj\Debug\net5.0-windows\ChessProblemWPF.pdb
 C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\ChessProblemWPF\obj\Debug\net5.0-windows\ChessProblemWPF.genruntimeconfig.cache
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\ChessProblemWPF\bin\Debug\net5.0-windows\AICore.dll
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\ChessProblemWPF\bin\Debug\net5.0-windows\AICore.pdb
+C:\Users\WWW\Documents\GitHub\ChessProject\ChessProject\ChessProblemWPF\obj\Debug\net5.0-windows\ChessProblemWPF.csproj.CopyComplete

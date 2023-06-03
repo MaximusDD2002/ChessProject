@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "ChessProblemWPF/1.0.0": {
+        "dependencies": {
+          "AICore": "1.0.0"
+        },
         "runtime": {
           "ChessProblemWPF.dll": {}
+        }
+      },
+      "AICore/1.0.0": {
+        "runtime": {
+          "AICore.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ChessProblemWPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AICore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

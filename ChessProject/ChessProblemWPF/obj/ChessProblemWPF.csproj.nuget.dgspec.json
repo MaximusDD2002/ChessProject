@@ -4,6 +4,21 @@
     "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProblemWPF\\ChessProblemWPF.csproj": {}
   },
   "projects": {
+    "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\AICore\\AICore.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\AICore\\AICore.csproj",
+        "projectName": "AICore",
+        "projectPath": "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\AICore\\AICore.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
     "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\ChessProblemWPF\\ChessProblemWPF.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +42,11 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\AICore\\AICore.csproj": {
+                "projectPath": "C:\\Users\\WWW\\Documents\\GitHub\\ChessProject\\ChessProject\\AICore\\AICore.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
