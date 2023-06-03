@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AICore", "AICore\AICore.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessConsole", "ChessConsole\ChessConsole.csproj", "{3E33618D-362D-40EB-ADE8-5BEC13564A09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessProblemWPF", "ChessProblemWPF\ChessProblemWPF.csproj", "{5FCA731C-4439-4252-A539-1DBB89DCB93F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3E33618D-362D-40EB-ADE8-5BEC13564A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E33618D-362D-40EB-ADE8-5BEC13564A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E33618D-362D-40EB-ADE8-5BEC13564A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FCA731C-4439-4252-A539-1DBB89DCB93F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCA731C-4439-4252-A539-1DBB89DCB93F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCA731C-4439-4252-A539-1DBB89DCB93F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCA731C-4439-4252-A539-1DBB89DCB93F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
