@@ -1,0 +1,10 @@
+D:\Troll\AI\AICore\bin\Debug\AICore.dll
+D:\Troll\AI\AICore\bin\Debug\AICore.pdb
+D:\Troll\AI\AICore\obj\Debug\AICore.csprojResolveAssemblyReference.cache
+D:\Troll\AI\AICore\obj\Debug\AICore.dll
+D:\Troll\AI\AICore\obj\Debug\AICore.pdb
+C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\bin\Debug\AICore.dll
+C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\bin\Debug\AICore.pdb
+C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\obj\Debug\AICore.csproj.CoreCompileInputs.cache
+C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\obj\Debug\AICore.dll
+C:\Users\WWW\Desktop\Дела учебные\AI EDE\AI\AICore\obj\Debug\AICore.pdb
