@@ -21,6 +21,7 @@ namespace ChessProblemWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random rnd = new Random();
         int curentIndex = 0;
         BitmapImage king = new BitmapImage(new Uri("/Pieces/King.png", UriKind.Relative));
         BitmapImage rook = new BitmapImage(new Uri("/Pieces/Rook.png", UriKind.Relative));
@@ -105,6 +106,8 @@ namespace ChessProblemWPF
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
+            if (ComboAlgorithm.SelectedIndex == 0) chooseAlg(rnd.Next(ComboAlgorithm.Items.Count-1) + 1);
+
             actualNode = curentAlg.Search();
             solutionList = curentAlg.GetSolutionAsList(actualNode);
             DrawChessBoard(actualNode);
@@ -114,15 +117,20 @@ namespace ChessProblemWPF
 
         private void ComboAlgorithm_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            switch (ComboAlgorithm.SelectedIndex)
+            chooseAlg(ComboAlgorithm.SelectedIndex);
+        }
+
+        private void chooseAlg(int x)
+        {
+            switch (x)
             {
-                case 0: //Backtrack
+                case 1: //Backtrack
                     curentAlg = new BacktrackChessProblem(true);
                     break;
-                case 1: //Depthfirst
+                case 2: //Depthfirst
                     curentAlg = new DepthFirstChessProblem();
                     break;
-                case 2: //Breadthfirst
+                case 3: //Breadthfirst
                     curentAlg = new BreadthFirstChessProblem();
                     break;
                 default:

@@ -37,6 +37,7 @@
                       Width="120"
                       SelectedIndex="0" 
                       SelectionChanged="ComboAlgorithm_SelectionChanged">
+                <ComboBoxItem Name = "Random" Content="Random"/>
                 <ComboBoxItem Name = "Backtrack" Content="Backtrack"/>
                 <ComboBoxItem Name = "DepthFirst" Content="DepthFirst"/>
                 <ComboBoxItem Name = "BreadthFirst" Content="BreadthFirst"/>
