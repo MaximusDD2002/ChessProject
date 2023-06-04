@@ -122,6 +122,9 @@ namespace ChessProblemWPF
                 case 1: //Depthfirst
                     curentAlg = new DepthFirstChessProblem();
                     break;
+                case 2: //Breadthfirst
+                    curentAlg = new BreadthFirstChessProblem();
+                    break;
                 default:
                     break;
             }

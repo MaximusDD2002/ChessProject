@@ -39,6 +39,7 @@
                       SelectionChanged="ComboAlgorithm_SelectionChanged">
                 <ComboBoxItem Name = "Backtrack" Content="Backtrack"/>
                 <ComboBoxItem Name = "DepthFirst" Content="DepthFirst"/>
+                <ComboBoxItem Name = "BreadthFirst" Content="BreadthFirst"/>
             </ComboBox>
             <Button x:Name="BtnStart" Content="Start"
                     Margin="0,5,5,0"
